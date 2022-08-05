@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>タンなんのさいと</title>
-        <link rel="icon" href="favicon.ico">
         <style>
             *{
               transition: font-size 0.6s 0s ease;
@@ -18,8 +17,6 @@
                 margin:0;
             }
             .Page{
-                background-image: url(Homepage.png);
-                background-size: cover;
                 height:100vh;
                 width: 100vw;
                 display: flex;
@@ -34,6 +31,13 @@
                 align-items: center;
                 flex-direction: column;
             }
+
+            div.text{
+                white-space: nowrap; color:white;
+                 text-stroke:
+                00.03em rgb(6, 85, 175); -webkit-text-stroke: 0.03em rgb(6, 85,
+                175); 
+            }
         </style>
         <link rel="preconnect" href="https://fonts.googleapis.com" id="webfont">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin
@@ -45,18 +49,17 @@
     </head>
 
     <body>
-        <div class="Page">
+        <div class="Page" style="overflow:hidden;">
+            <picture style="position:absolute; overflow: hidden; width:100vw; height:100vh; z-index: -1;">
+                <source srcset="Topics.avif" type="image/avif">
+                <source srcset="Topics.webp" type="image/webp">
+                <img src="Topics.png" alt="" style="width:100vw; height:100vh; object-fit: cover;">
+            </picture>
             <div class="flexbox">
-                <div style="white-space: nowrap; overflow: hidden; color:white;
-                font-size:12vw; border-bottom: solid 1.5vw #87CEFA; text-stroke:
-                00.03em rgb(6, 85, 175); -webkit-text-stroke: 0.03em rgb(6, 85,
-                175); text-shadow: 0vw 0.6vw 4px #0000003d;">アニメ大好き！</div>
-                <div style="white-space: nowrap; overflow: hidden; color:white;
-                font-size:4vw; text-stroke:00.03em rgb(6, 85, 175); -webkit-text-stroke: 0.03em rgb(6, 85,
-                175); text-shadow: 0vw 0.6vw 4px #0000003d;">📡タンなん🎥✨ @XiactiveTan</div>
+                <div class="text" style="font-size:12vw; text-shadow: 0vw 0.6vw 4px #0000003d; border-bottom: solid 1.5vw #87CEFA;">アニメ大好き！</div>
+                <div class="text" style="font-size:4vw;text-shadow: 0vw 0.4vw 4px #0000009a;">📡タンなん🎥✨ @XiactiveTan</div>
             </div>
             
         </div>
-
     </body>
 </html>
