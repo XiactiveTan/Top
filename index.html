@@ -3,26 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script>
-            function loadCss(href, check) {
-            if(typeof(check) == 'undefined') check = true;
-            var head = document.getElementsByTagName('head')[0];
-            var link = document.createElement('link');
-            link.rel = 'stylesheet';
-            link.type = 'text/css';
-            link.href = href;
-            if(check) {
-                var links = head.getElementsByTagName('link');
-                for(var i = 0; i < links.length; i++) {
-                    if(links[i].href == link.href) return false;
-                }
-            }
-            head.appendChild(link);
-            }
-        </script>
-        <script>
-            loadCss("style.css");
-        </script>
+        <link rel="stylesheet" href="style.css">
         <title>タンなんのさいと</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" id="webfont">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin id="webfont">
@@ -32,10 +13,10 @@
     <body>
         <div class="Page" style="overflow:hidden;">
             <picture style="position:absolute; overflow: hidden; width:100vw; height:100vh; z-index: -1;">
-                <source srcset="images/Topics.avif 2160w, images/Topics-1440.avif 1440w, images/Topics-720.avif 720w, images/Topics-360.avif 360w" sizes="95vmax" type="image/avif">
-                <source srcset="images/Topics.webp 2160w, images/Topics-1440.webp 1440w, images/Topics-720.webp 720w, images/Topics-360.webp 360w" sizes="95vmax" type="image/webp">
-                <source srcset="images/Topics.jpg 2160w, images/Topics-1440.jpg 1440w, images/Topics-720.jpg 720w, images/Topics-360.jpg 360w" sizes="95vmax" type="image/jpeg">
-                <img srcset="images/Topics.png 2160w, images/Topics-1440.png 1440w, images/Topics-720.png 720w, images/Topics-360.png 360w" src="Topics.png" sizes="95vmax" alt="" style="width:100vw; height:100vh; object-fit: cover;">
+                <source srcset="images/Topics.avif 2160w, images/Topics-1440.avif 1440w, images/Topics-720.avif 720w, images/Topics-360.avif 360w" sizes="90vmax" type="image/avif">
+                <source srcset="images/Topics.webp 2160w, images/Topics-1440.webp 1440w, images/Topics-720.webp 720w, images/Topics-360.webp 360w" sizes="90vmax" type="image/webp">
+                <source srcset="images/Topics.jpg 2160w, images/Topics-1440.jpg 1440w, images/Topics-720.jpg 720w, images/Topics-360.jpg 360w" sizes="90vmax" type="image/jpeg">
+                <img srcset="images/Topics.png 2160w, images/Topics-1440.png 1440w, images/Topics-720.png 720w, images/Topics-360.png 360w" src="Topics.png" sizes="90vmax" alt="" style="width:100vw; height:100vh; object-fit: cover;">
             </picture>
             <div class="flexbox">
                 <div class="text" style="font-size:12vw; text-shadow: 0vw 0.6vw 4px #0000003d; border-bottom: solid 1.5vw #87CEFA;">アニメ大好き！</div>
